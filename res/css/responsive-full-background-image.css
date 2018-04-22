@@ -1,0 +1,62 @@
+body {
+
+  /* Location of the image */
+  background-image: url(../../images/fruitBG.jpg);
+
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  
+  background-color:#222222;
+  opacity: 1;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+   
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /*background-image: url(../../images/background-mobile.svg);
+  }
+}
+
+
+
+/*---------------------------------------------------------------*/
+/*  For responsive images */
+.rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+}
+
+/*  For responsive images as background */
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* change this to "contain" for no crop */
+    color:#fff;
+    filter: grayscale(100%);
+    border-radius:50%;
+    border:3px solid #7A2A2A;
+}
+
+.bg:hover {
+	filter:none;
+}
